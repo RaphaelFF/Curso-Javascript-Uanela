@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="br-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso javascript | Uanela
+    </title>
+</head>
+
+<body>
+
+    <h1>comando de saida do javascript</h1>
+    <p style="color: brown;">document.write(“Texto a ser mostrado”);</p>
+    <p>OBS: O comando write também pode inserir código HTML interpretável pelo browser, basta inserir normalmente as
+        tags
+        entre as aspas, veja o código em vermelho a seguir: <br>
+        <span style="color: brown;">document.write("h1 usando array junto com o for h1")</span>
+    </p>
+    <hr>
+
+    <script>
+
+        //variaveis temos dois tipos, o var e o let.
+        document.write("<h1>Trabalhando com variaveis do tipo let e var </h1>")
+        let nome = "Raphael Fernandes"
+        let idade = 22
+        document.write(nome + "<br>" + idade + "anos")
+
+        //trabalhando com array e for
+        document.write("<h1>usando array junto com o for</h1>")
+        let filhos = ['raphael', 'claudiane', 'leonam', 'ana claudia']
+        for (let i = 0; i < filhos.length; i++) {
+            document.write(filhos[i] + "<br>")
+        }
+    </script>
+</body>
+
+</html>
