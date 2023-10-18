@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="br-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio de aprendizado</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário HTML</title>
+</head>
+<body>
+  <form>
+    <label for="name">Nome:</label><br>
+    <input type="text" id="nome"><br>
+    <button onclick="checar()">clique aqui</button>
+  </form> 
+</body>
+</html>
+
+    <script>
+        /* 1- Mensagem de Boas-vindas: Crie uma página que exiba um alert com a mensagem 
+        "Bem-vindo ao nosso site!" quando a página for carregada.
+        
+        alert("Bem-vindo ao nosso site!");*/
+
+        /*Alerta de Erro: Crie um formulário com um botão de envio. Ao clicar no botão, 
+        verifique se o campo de entrada está vazio. Se estiver vazio, exiba um alert com a mensagem 
+        "Por favor, preencha o campo!"*/
+        function checar(){
+            let campo = document.getElementById("nome").value
+            if (campo === "") {
+                alert("campo vazio, digite seu nome no campo indicado")
+            } else {
+                alert("campo preenchido com sucesso " + campo)
+            }
+        }
+
+    </script>
+</body>
+</html>
