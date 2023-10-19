@@ -29,15 +29,31 @@
 
         /*Alerta de Erro: Crie um formulário com um botão de envio. Ao clicar no botão, 
         verifique se o campo de entrada está vazio. Se estiver vazio, exiba um alert com a mensagem 
-        "Por favor, preencha o campo!"*/
+        "Por favor, preencha o campo!"
         function checar(){
             let campo = document.getElementById("nome").value
-            if (campo === "") {
+            if (campo == "") {
                 alert("campo vazio, digite seu nome no campo indicado")
             } else {
-                alert("campo preenchido com sucesso " + campo)
+                alert("campo preenchido com sucesso: " + campo)
             }
         }
+        */
+
+        /*Alerta de Horário: Use Date()para obter a hora atual do sistema. 
+        Se a hora for menor que 12, exiba um alertcom a mensagem "Bom dia!". 
+        Se for maior ou igual a 12, exiba "Boa tarde!". */
+
+        let hora = new Date().getHours()
+        let menssagem
+        if(hora < 12) {
+            menssagem = "bom dia!"
+        } else {
+            menssagem = "boa noite!"
+        }
+
+        alert(menssagem)
+
 
     </script>
 </body>
